@@ -1,2 +1,24 @@
-# DISTRIBUTED-DECENTRALIZED-DATA-SHARING-SYSTEM
-Built a peer-to-peer (P2P) file-sharing system where each node functions as both client and server, eliminating the need for central coordination. The system uses dynamic routing tables and a custom gossip protocol for decentralized peer discovery and metadata sharing. It supports file upload, retrieval, and replication (with a configurable replication factor) using RESTful APIs. Fault tolerance is achieved through periodic node liveness checks using health pings and automatic removal of unreachable nodes. Files are replicated across random peer nodes to ensure availability and resilience. Multi-threading is used to handle background tasks like gossiping and health monitoring without blocking core operations. Additionally, simple UI templates were created for uploading files, registering peers, requesting files, and viewing the routing table. This project strengthened my understanding of decentralized coordination, eventual consistency, and fault-tolerant distributed system design.
+# Distributed Decentralized Data Sharing System
+
+A fault-tolerant peer-to-peer (P2P) file-sharing system built using Flask and Python. Each node can upload, replicate, and retrieve files across a decentralized network without any central server.
+
+## 🔧 Features
+
+- Peer-to-peer file upload, retrieval, and configurable replication
+- Dynamic routing table with gossip-based metadata propagation
+- Node liveness detection via health pings and auto-removal
+- REST API-based communication between nodes
+- Multi-threaded gossip and health-check operations
+- Simple UI for uploading, registering peers, requesting files
+
+## 🛠️ Technologies
+
+- Python, Flask
+- REST APIs
+- Multi-threading
+- Gossip Protocol
+- Basic DHT logic
+- HTML templates
+
+## 📂 Folder Structure
+
